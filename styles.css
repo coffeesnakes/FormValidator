@@ -1,6 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@500&display=swap');
 
+:root {
+  --success-color: #2ecc71 ;
+  --error-color: #e74c3c;
+}
+
+
  * {
    box-sizing: border-box;
  }
@@ -51,4 +57,14 @@
   .form-control input:focus {
     outline: 0;
     border-color: #777;
+  }
+  .form-control.success input {
+    border-color: var(--success-color);
+  }
+  .form-control.error input {
+    border-color: var(--error-color);
+  }
+
+  .form-control small {
+    color: var(--error-color);
   }

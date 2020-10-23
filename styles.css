@@ -6,5 +6,10 @@
  }
  body {
    background-color: #f9fafb;
-   font-family: 'Turret Road'
+   font-family: 'Turret Road';
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 60vh;
+   margin: 0;
  }

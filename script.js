@@ -8,7 +8,13 @@ const password2 = document.getElementById('password2');
 // show inputted error msg
 function showError(input, message) {
     const formControl = input.parentElement;
-    formControl.className = 'form-control error'
+    formControl.className = 'form-control error';
+    const small = formControl.querySelector('small');
+    small.innerText = message;
+};
+function showSuccess (input) {
+  const formControl = input.parentElement;
+  formControl.className = 'form-control success';
 }
 // event Listeners
 form.addEventListener('submit', function (event) {

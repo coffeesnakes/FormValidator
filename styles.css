@@ -8,6 +8,7 @@
  * {
    box-sizing: border-box;
  }
+
  body {
    background-color: #f9fafb;
    font-family: 'Turret Road';
@@ -39,11 +40,13 @@
    padding-bottom: 20px;
    position: relative;
  }
+
  .form-control label {
    color: #777;
    display: block;
    margin-bottom: 5px;
   }
+
   .form-control input {
     border: 2px solid #f0f0f0;
     border-radius: 4px;
@@ -52,13 +55,16 @@
     padding: 10px;
     font-size: 14px;
   }
+
   .form-control input:focus {
     outline: 0;
     border-color: #777;
   }
+
   .form-control.success input {
     border-color: var(--success-color);
   }
+
   .form-control.error input {
     border-color: var(--error-color);
   }

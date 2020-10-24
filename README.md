@@ -1,7 +1,7 @@
 # FormValidator
 
-A project in vanilla javascript to touch up on validating methods.
+A project in vanilla javascript to better understanding validation methods and practice working with the HTML DOM accessing in javascript
 
 
 
-** May extend this into verification methodologies too **
+Went in-depth for a more fine-tuned minimalistic style with css, "less is more".

@@ -25,6 +25,21 @@ form.addEventListener('submit', function (event) {
   } else {
     showSuccess(username);
   }
+  if (email.value === '') {
+    showError(email, 'Email is required')
+  } else {
+    showSuccess(email);
+  }
+  if (password.value === '') {
+    showError(password, 'Password is required')
+  } else {
+    showSuccess(password);
+  }
+  if (password2.value === '') {
+    showError(password2, 'Password doesn\'t match!')
+  } else {
+    showSuccess(password2);
+  }
 })
 
 function Authenticate() {

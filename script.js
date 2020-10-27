@@ -24,33 +24,39 @@ function isValidEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
+//check required fiels
+function checkRequired () {
+
+}
+
+
 // event Listeners
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
+// form.addEventListener('submit', function (event) {
+//   event.preventDefault();
 
-  if (username.value === '') {
-    showError(username, 'Username is required')
-  } else {
-    showSuccess(username);
-  }
+//   if (username.value === '') {
+//     showError(username, 'Username is required')
+//   } else {
+//     showSuccess(username);
+//   }
 
-  if (email.value === '') {
-    showError(email, 'Email is required')
-  } else if (!isValidEmail(email.value)) {
-    showError(email, 'is not a valid email.')
-  } else {
-    showSuccess(email);
-  }
+//   if (email.value === '') {
+//     showError(email, 'Email is required')
+//   } else if (!isValidEmail(email.value)) {
+//     showError(email, 'is not a valid email.')
+//   } else {
+//     showSuccess(email);
+//   }
 
-  if (password.value === '') {
-    showError(password, 'Password is required')
-  } else {
-    showSuccess(password);
-  }
+//   if (password.value === '') {
+//     showError(password, 'Password is required')
+//   } else {
+//     showSuccess(password);
+//   }
 
-  if (password2.value === '') {
-    showError(password2, 'Password doesn\'t match!')
-  } else {
-    showSuccess(password2);
-  }
-});
+//   if (password2.value === '') {
+//     showError(password2, 'Password doesn\'t match!')
+//   } else {
+//     showSuccess(password2);
+//   }
+// });

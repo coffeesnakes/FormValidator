@@ -24,11 +24,22 @@ function isValidEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
-//check required fiels
-function checkRequired () {
-
+//check required fields
+function checkRequired (arr) {
+arr.forEach(function(input) {
+if (input.value.trim() === '') {
+  showError(input, `${input.id}is required!`)
+} else {
+  showSuccess(input);
+}
+});
 }
 
+// event listeners
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  checkRequired([username, email, password, password2])
+})
 
 // event Listeners
 // form.addEventListener('submit', function (event) {
